@@ -63,7 +63,7 @@ public class IntegrationTest {
     }
 
     @Test
-    @Order(3)
+    @Order(2)
     public void testUpdateTask() throws Exception {
     	System.out.println("Created Task ID: " + createdTaskId);
         String updateJson = """
@@ -81,7 +81,7 @@ public class IntegrationTest {
     }
 
     @Test
-    @Order(4)
+    @Order(3)
     public void testDeleteTask() throws Exception {
         System.out.println("Deleting Task ID: " + createdTaskId);
         
@@ -94,7 +94,7 @@ public class IntegrationTest {
     }
 
     @Test
-    @Order(5)
+    @Order(4)
     public void testCreateTaskWithInvalidDate() throws Exception {
         String invalidJson = """
             {
@@ -112,7 +112,7 @@ public class IntegrationTest {
     }
 
     @Test
-    @Order(6)
+    @Order(5)
     public void testDeleteNonExistingTask() throws Exception {
         String invalidId = "00000000-0000-0000-0000-000000000000";
 
